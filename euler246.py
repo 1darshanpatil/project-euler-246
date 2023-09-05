@@ -30,7 +30,7 @@ def max_range_linear(a, b):
 
 if __name__ == "__main__":
     a, b = 7500, 2500*5**.5
-    a, b = 3, 2
+    #a, b = 3, 2
     xe, ye = max_range_linear(a, b)
     print(xe, ye)
     cnt = 0
