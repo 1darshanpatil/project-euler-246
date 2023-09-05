@@ -10,9 +10,11 @@ def orthoptics(y, a, b):
 def ellipse(y, a, b):
     if y > b:
         return 0
-    x = a * math.sqrt(1 - (y / b) ** 2)
+    if y == b:
+        return 1
+    x = a * math.sqrt(1 - (y/b) ** 2)
     res = x
-
+    
     if res:
         took = res
         if math.ceil(took) != took:
